@@ -1,3 +1,5 @@
 Prepare
 Play chess
 Make Soup
+Clean The Rum
+Master Python
