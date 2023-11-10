@@ -1,5 +1,8 @@
 Prepare
 Play chess
 Make Soup
-Clean The Rum
-Master Python
+Example
+Save 
+Go
+Clean The Room
+Make Soup
