@@ -1,8 +1,5 @@
-Prepare
-Play chess
 Make Soup
 Example
 Save 
-Go
 Clean The Room
 Make Soup
