@@ -15,10 +15,20 @@ st.title('My To-Do App')
 
 todos = functions.get_todos()
 
-for todo in todos:
-    st.checkbox(todo)
+for i, todo in enumerate(todos):
+    checkbox = st.checkbox(todo, key=todo)
+    if checkbox:
+        todos.pop(i)
+        functions.write_todos(todos)
+        del st.session_state[todo]
+        st.rerun()
 
 st.text_input(label='Your New To-Do', placeholder='Add new To-Do',
               on_change=add_todo, key='new_todo')
 
+
+
+
 print('Hello')
+print(st.session_state)
+st.session_state
