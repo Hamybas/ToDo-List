@@ -11,9 +11,7 @@ todos_field = sg.Listbox(values=functions.get_todos(),
                          size=[45, 10])
 
 window = sg.Window('My To-Do App',
-                   [[label],
-                    [input_box, add_button],
-                    [todos_field, edit_button]],
+                   [[label], [input_box, add_button], [todos_field, edit_button]],
                    font=('Helvetica', 20))
 while True:
     event, values = window.read()
