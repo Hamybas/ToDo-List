@@ -59,6 +59,7 @@ while True:
 
         case 'Exit':
             break
+
         case sg.WIN_CLOSED:
             break
 
