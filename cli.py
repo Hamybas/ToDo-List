@@ -15,7 +15,7 @@ while True:
         # todos = file.readlines()
         # file.close()
 
-        todos = functions.get_todos()
+        todos = functions.get_txt()
 
         todos.append(todo.title()+'\n')
 
@@ -23,14 +23,14 @@ while True:
         # file.writelines(todos)
         # file.close()
 
-        functions.write_todos(todos)
+        functions.write_txt(todos)
 
     elif user_action.startswith('show'):
         # file = open('todos.txt', 'r')
         # todos = file.readlines()
         # file.close()
 
-        todos = functions.get_todos()
+        todos = functions.get_txt()
 
         # new_todos = []
         # for item in todos:
@@ -54,7 +54,7 @@ while True:
             new_todo = input('Enter new todo: ')
             todos[number] = new_todo.capitalize() + '\n'
 
-            functions.write_todos(todos)
+            functions.write_txt(todos)
 
         except ValueError:
             print('Your command is not valid. Please enter "edit" and # of TODO to edit')
@@ -70,7 +70,7 @@ while True:
             removed_todo = todos[i].strip('\n')
             todos.pop(i)
 
-            functions.write_todos(todos)
+            functions.write_txt(todos)
 
             message = f'Todo "{removed_todo}" was removed from the list'
             print(message)
