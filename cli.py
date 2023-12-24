@@ -15,7 +15,7 @@ while True:
         # todos = file.readlines()
         # file.close()
 
-        todos = functions.get_txt()
+        todos = functions.get_todos()
 
         todos.append(todo.title()+'\n')
 
@@ -23,14 +23,14 @@ while True:
         # file.writelines(todos)
         # file.close()
 
-        functions.write_txt(todos)
+        functions.write_todos(todos)
 
     elif user_action.startswith('show'):
         # file = open('todos.txt', 'r')
         # todos = file.readlines()
         # file.close()
 
-        todos = functions.get_txt()
+        todos = functions.get_todos()
 
         # new_todos = []
         # for item in todos:
@@ -70,7 +70,7 @@ while True:
             removed_todo = todos[i].strip('\n')
             todos.pop(i)
 
-            functions.write_txt(todos)
+            functions.write_todos(todos)
 
             message = f'Todo "{removed_todo}" was removed from the list'
             print(message)
