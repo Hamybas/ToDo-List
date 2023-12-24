@@ -25,10 +25,3 @@ for i, todo in enumerate(todos):
 
 st.text_input(label='Your New To-Do', placeholder='Add new To-Do',
               on_change=add_todo, key='new_todo')
-
-
-
-
-print('Hello')
-print(st.session_state)
-st.session_state
